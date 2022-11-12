@@ -4,8 +4,8 @@
     "description": "Techchak Backend",
     "main": "server.js",
     "scripts": {
-        "start": "NODE_ENV=production node src/server",
-        "dev": "nodemon src/server",
+        "start": "NODE_ENV=production node server",
+        "dev": "nodemon server",
         "seed-d": "node remover -d",
         "packages": "npm install",
         "deploy-heroku": "git push heroku master"

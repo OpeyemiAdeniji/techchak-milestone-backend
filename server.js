@@ -14,11 +14,11 @@ const cors = require('cors');
 var userAgent = require('express-useragent');
 
 // seeder 
-const { seedData } = require('./config/seeds/seeder.seed');
+const { seedData } = require('./src/config/seeds/seeder.seed');
 
 // files
-const errorHandler = require('./middleware/error.mw');
-const connectDB = require('./config/db');
+const errorHandler = require('./src/middleware/error.mw');
+const connectDB = require('./src/config/db');
 
 //load the config file
 // dotenv.config({ path: './config/.env' });
@@ -28,7 +28,7 @@ config();
 connectDB();
 
 // route files
-const v1Routers = require('./routes/v1/routes.router');
+const v1Routers = require('./src/routes/v1/routes.router');
 
 
 const app = express();
